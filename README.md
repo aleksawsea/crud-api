@@ -23,7 +23,10 @@ A simple HTTP API for managing “users” in an in-memory database, built with 
   `PORT=4000`   
   This is the base port for the HTTP server.
 
-4. **Available Scripts**   
+---
+
+## Available Scripts   
+
 - development mode (hot-reload via ts-node-dev)   
 npm run start:dev   
 Launches src/index.ts under ts-node-dev with automatic restart on file changes.
@@ -36,7 +39,10 @@ Invokes Webpack (via webpack.config.ts) to produce a single dist/bundle.ts.
 npm run start:prod   
 Runs npm run build and then executes node dist/bundle.ts.   
 
-5. **API Endpoints**   
+---
+
+## API Endpoints   
+
 - **GET** - Get an array of all users.   
   /api/users   
 - **GET** - Get one user by ID.   
