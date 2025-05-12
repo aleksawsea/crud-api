@@ -24,15 +24,15 @@ A simple HTTP API for managing “users” in an in-memory database, built with 
   This is the base port for the HTTP server.
 
 4. **Available Scripts**
-# development mode (hot-reload via ts-node-dev)
+- development mode (hot-reload via ts-node-dev)
 npm run start:dev
 Launches src/index.ts under ts-node-dev with automatic restart on file changes.
 
-# build production bundle (Webpack)
+- build production bundle (Webpack)
 npm run build
 Invokes Webpack (via webpack.config.ts) to produce a single dist/bundle.ts.
 
-# production mode
+- production mode
 npm run start:prod
 Runs npm run build and then executes node dist/bundle.ts.
 
