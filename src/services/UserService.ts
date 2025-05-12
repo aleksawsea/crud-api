@@ -20,7 +20,7 @@ export const userService = {
       throw new HttpError(400, 'Missing required fields');
     };
     const newUser: User = { id: randomUUID(), username, age, hobbies };
-    users.push();
+    users.push(newUser);
     return newUser;
   },
   update(id: string, data: Partial<Omit<User, 'id'>>): User {
